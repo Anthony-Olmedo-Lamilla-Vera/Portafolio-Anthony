@@ -20,7 +20,7 @@ function App() {
         </header>
       </div>
       <Switch>
-        <Route path="/" exact>
+        <Route path="/Portafolio-Anthony/" exact>
           <Inicio />
         </Route>
         <Route path="/Portafolio-Antox/Contacto" exact>
