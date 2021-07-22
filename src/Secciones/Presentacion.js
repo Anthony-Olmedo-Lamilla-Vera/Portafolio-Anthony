@@ -19,7 +19,13 @@ function Presentacion() {
           <p>Encontraras de Todo, Me estoy especializando. </p>{" "}
           <p> a continuacion veras más de mis proyectos realizados...</p>
           <div className="button-cv">
-            <BotonConfirmacion titulo="Descargar CV" />
+            <a
+              href="https://ugye-my.sharepoint.com/:b:/g/personal/anthony_lamillav_ug_edu_ec/EbrMK17LP79JunjtmpEhxh0B2Vfh9L3RW7WZaw_5UpPTuA?e=82JRzk"
+              download
+              target="_blank"
+            >
+              <BotonConfirmacion titulo="Curriculum vitae" />
+            </a>
           </div>
         </div>
       </div>

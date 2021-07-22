@@ -9,13 +9,30 @@ function Proyectos() {
         <Titulos titulo="Proyectos" />
       </div>
       <div className="cont-cards">
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+        <Card
+          repo="https://github.com/Antocraxx/StoreMuebles/"
+          pagina="https://antocraxx.github.io/StoreMuebles/"
+        />
+        <Card
+          repo="https://github.com/Antocraxx/StoreMuebles"
+          pagina="https://antocraxx.github.io/StoreMuebles/"
+        />
+        <Card
+          repo="https://github.com/Antocraxx/StoreMuebles/"
+          pagina="https://antocraxx.github.io/StoreMuebles/"
+        />
+        <Card
+          repo="https://github.com/Antocraxx/StoreMuebles"
+          pagina="https://antocraxx.github.io/StoreMuebles/"
+        />{" "}
+        <Card
+          repo="https://github.com/Antocraxx/StoreMuebles"
+          pagina="https://antocraxx.github.io/StoreMuebles/"
+        />{" "}
+        <Card
+          repo="https://github.com/Antocraxx/StoreMuebles"
+          pagina="https://antocraxx.github.io/StoreMuebles/"
+        />
       </div>
     </div>
   );

@@ -1,6 +1,6 @@
 import React from "react";
 import BotonConfirmacion from "./BotonConfirmacion";
-function Card() {
+function Card(props) {
   return (
     <div className="Cont-card">
       <div className="negro"></div>
@@ -9,8 +9,8 @@ function Card() {
           <h2>E - Commerce</h2>
         </div>
         <div className="boton-card">
-          <BotonConfirmacion titulo="Ver Repositorio " />
-          <BotonConfirmacion titulo="Ver Pagina " />
+          <BotonConfirmacion titulo="Ver Repositorio" link={props.repo} />
+          <BotonConfirmacion titulo="Ver Pagina " link={props.pagina} />
         </div>
       </div>
     </div>

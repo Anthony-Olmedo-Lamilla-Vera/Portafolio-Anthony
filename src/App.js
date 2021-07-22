@@ -11,7 +11,7 @@ function App() {
       <div className="App">
         <header className="App-header">
           <div className="cont-header">
-            <div className="logo">AC</div>
+            <div className="logo">ATC</div>
             <Head />
             <div className="user">
               <i class="bx bx-user"></i>

@@ -8,9 +8,10 @@ html {
   margin: 0;
   padding: 0;
 }
-.logo > * {
+.logo {
+  font-size: 25px;
   font-family: "Permanent Marker", cursive;
-  color: var(--verd);
+  color: var(--celeste);
 }
 :root {
   --color--blanco: #ffffff;
@@ -37,6 +38,7 @@ body {
   background: rgba(146, 123, 123, 0.18);
   backdrop-filter: blur(10px);
 }
+
 .cont-header {
   padding: 0.9375rem 0.625rem;
   display: flex;
@@ -352,7 +354,7 @@ a {
 @media screen and (max-width: 700px) {
   html {
     color: var(--celeste);
-    font-size: 16px;
+    font-size: 15px;
   }
   body {
     color: red;
@@ -363,6 +365,11 @@ a {
     align-items: center;
     margin: 0.125rem 0.3125rem;
   }
+  .cont-header .user i {
+    font-size: 1.2rem;
+    padding: 0.4rem;
+    background-color: var(--azulosc);
+  }
   .cont-cards {
     height: 80vh;
   }
@@ -370,14 +377,17 @@ a {
     height: min-content;
   }
   .Presentacion {
-    height: 40vh;
+    height: 35vh;
   }
   .btn-conf {
-    padding: 1rem 1rem;
+    padding: 0.7rem 0.9rem;
   }
   .cont--text p {
     font-size: 1.2rem;
-    text-align: justify;
+    text-align: center;
+  }
+  .nav head {
+    width: 0.5625rem;
   }
 
   .nav-head li,
@@ -434,6 +444,7 @@ a {
   /*Banner*/
   .titulos {
     width: 25rem;
+    margin: 2rem 0;
     font-size: 1.8rem;
   }
   .img--banner img {
@@ -464,21 +475,22 @@ a {
     display: grid;
     grid-template-columns: 1fr 1fr;
     overflow: hidden;
+    height: 90%;
     gap: 0.5rem;
   }
   .negro {
     width: 100%;
-    height: 60%;
+    height: 30%;
     z-index: -2;
   }
   .Cont-card {
     width: 100%;
-    height: 100%;
+    height: 70%;
   }
-  .boton-card > * {
+  .boton-card a {
     font-weight: regular;
     margin: 0.5rem;
-    font-size: 0.8rem;
+    font-size: 0.2rem;
     border-radius: 0.6875rem;
     padding: 0.4rem 0.2rem;
   }
@@ -493,15 +505,21 @@ a {
     font-size: 1rem;
   }
   .Herramientas {
-    min-height: 70vh;
+    min-height: 68vh;
   }
   .textos-banner {
     height: 42vh;
   }
+  .text-btn h2 {
+    display: none;
+  }
+  .cont-proyectos {
+    height: 10vh;
+  }
 }
 @media screen and (max-width: 480px) {
   .Presentacion {
-    height: 45vh;
+    height: 42vh;
     margin: 5px 0;
   }
   .text-btn h2 {
