@@ -349,14 +349,14 @@ a {
   background-color: var(--azulosc);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   html {
     color: var(--celeste);
-    font-size: 13px;
+    font-size: 16px;
   }
   body {
     color: red;
-    font-size: 13px;
+    font-size: 15px;
   }
   .cont-header {
     padding: 0;
@@ -367,11 +367,16 @@ a {
     height: min-content;
   }
   .Presentacion {
-    height: 45vh;
+    height: 40vh;
   }
   .btn-conf {
     padding: 1rem 1rem;
   }
+  .cont--text p {
+    font-size: 1.2rem;
+    text-align: justify;
+  }
+
   .nav-head li,
   .logo,
   .user i,
