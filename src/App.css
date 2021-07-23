@@ -189,7 +189,7 @@ a {
   border-style: none;
   z-index: 0;
   border-radius: 15px;
-  padding: 0.9375rem 3.125rem;
+  padding: 1.5rem 3.125rem;
   background-color: var(--celeste);
   color: var(--color--blanco);
   font-weight: 700;
@@ -277,12 +277,8 @@ a {
   justify-content: center;
 }
 .Cont-card {
-  position: relative;
-  background: url("https://lh3.googleusercontent.com/pw/AM-JKLU83GgJtVYWCxXCOeLU0MS-Osis9K1_8SuugGcpgJOkK1vYn47Hao9y_OPx63uIth6L7F4q3vfCSwP_8G1iKQbh9AoLq5mHtxkr4m7kt1jVyf7FxgYOX99Zvmh6paUWi5-OdsbhlVtOwUKv0W66MF47=w1573-h663-no?authuser=0")
-    no-repeat;
-  background-size: contain;
-  width: 28.125rem;
-  height: 12.5rem;
+  width: 40%;
+  height: 25%;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -290,18 +286,11 @@ a {
   margin: 0.3125rem 0.5rem;
   overflow: hidden;
 }
+
 .fondo {
   overflow: hidden;
 }
-.negro {
-  position: absolute;
-  z-index: 999;
-  border-radius: 15px;
 
-  width: 28.125rem;
-  height: 12.5rem;
-  background-color: rgba(0, 0, 0, 0.418);
-}
 .text-btn {
   z-index: 18888;
 }
@@ -310,7 +299,7 @@ a {
   text-align: center;
   width: 50%;
   background-color: var(--color--blanco);
-  border-radius: 15px;
+  border-radius: 0.9375rem;
   text-align: center;
 }
 .boton-card {
@@ -329,6 +318,20 @@ a {
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
+}
+.img-card {
+  width: 100%;
+  height: 100%;
+}
+.img-card img {
+  filter: brightness(50%);
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  transition: 0.2s linear;
+}
+.img-card img:hover {
+  filter: brightness(90%);
 }
 /*Herramientas */
 .logos-Herramientas li {
@@ -350,7 +353,11 @@ a {
   border-radius: 0.9375rem;
   background-color: var(--azulosc);
 }
-
+a {
+  padding: 0;
+  margin: 0;
+  border-style: none;
+}
 @media screen and (max-width: 700px) {
   html {
     color: var(--celeste);
@@ -374,6 +381,7 @@ a {
     height: 80vh;
   }
   header {
+    padding: 0.7rem 0;
     height: min-content;
   }
   .Presentacion {
@@ -394,7 +402,7 @@ a {
   .logo,
   .user i,
   .nav-head li a {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
   .user i > * {
     font-size: 0.2rem;
@@ -475,14 +483,10 @@ a {
     display: grid;
     grid-template-columns: 1fr 1fr;
     overflow: hidden;
-    height: 90%;
-    gap: 0.5rem;
+    height: 80%;
+    gap: 0.9rem;
   }
-  .negro {
-    width: 100%;
-    height: 30%;
-    z-index: -2;
-  }
+
   .Cont-card {
     width: 100%;
     height: 70%;
@@ -524,6 +528,9 @@ a {
   }
   .text-btn h2 {
     display: none;
+  }
+  .btn-conf {
+    padding: 0.2rem 0.5rem;
   }
   .cont-cards {
     margin: 0 1rem;

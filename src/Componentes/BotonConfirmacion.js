@@ -2,9 +2,11 @@ import React from "react";
 
 function BotonConfirmacion(props) {
   return (
-    <button target="_blank" href={props.link} className="btn-conf">
-      {props.titulo}
-    </button>
+    <a href={props.link} target="_blank">
+      <button target="_blank" href={props.link} className="btn-conf">
+        {props.titulo}
+      </button>
+    </a>
   );
 }
 

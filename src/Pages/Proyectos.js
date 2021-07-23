@@ -14,7 +14,7 @@ function Proyectos() {
           pagina="https://antocraxx.github.io/StoreMuebles/"
         />
         <Card
-          repo="https://github.com/Antocraxx/StoreMuebles"
+          repo="https://github.com/Antocraxx/StoreMuebles/"
           pagina="https://antocraxx.github.io/StoreMuebles/"
         />
         <Card
@@ -22,15 +22,7 @@ function Proyectos() {
           pagina="https://antocraxx.github.io/StoreMuebles/"
         />
         <Card
-          repo="https://github.com/Antocraxx/StoreMuebles"
-          pagina="https://antocraxx.github.io/StoreMuebles/"
-        />{" "}
-        <Card
-          repo="https://github.com/Antocraxx/StoreMuebles"
-          pagina="https://antocraxx.github.io/StoreMuebles/"
-        />{" "}
-        <Card
-          repo="https://github.com/Antocraxx/StoreMuebles"
+          repo="https://github.com/Antocraxx/StoreMuebles/"
           pagina="https://antocraxx.github.io/StoreMuebles/"
         />
       </div>
