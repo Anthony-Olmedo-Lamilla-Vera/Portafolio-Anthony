@@ -21,6 +21,7 @@ html {
   --azulosc: #0a1324;
 }
 body {
+  transition: 0.8s linear;
   min-height: 100vh;
   width: 100%;
   font-family: "Ubuntu", sans-serif;
@@ -99,7 +100,7 @@ a {
   font-size: 1.5rem;
 }
 .cont-redes nav li a i {
-  font-size: 200px; /* change this to change the size*/
+  font-size: 12.5rem; /* change this to change the size*/
   color: var(--color--blanco);
   font-size: 2.52rem;
 }
@@ -173,6 +174,15 @@ a {
 .Nombres {
   color: #2fa7db;
   font-weight: bold;
+  animation: titulo 0.8s alternate infinite;
+}
+@keyframes titulo {
+  from {
+    color: var(--celeste);
+  }
+  to {
+    color: var(--color--blanco);
+  }
 }
 .Profesion {
   color: #fb0000;
@@ -194,7 +204,7 @@ a {
   color: var(--color--blanco);
   font-weight: 700;
   font-style: italic;
-  font-size: 1.125rem;
+  font-size: 1.8rem;
   cursor: pointer;
   transition: 0.15s;
 }
@@ -358,15 +368,68 @@ a {
   margin: 0;
   border-style: none;
 }
+.cont-footer {
+  min-height: 10vh;
+  height: 10vh;
+  max-height: 30vh;
+  width: 100%;
+  background-color: var(--azulosc);
+  color: var(--verd);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.text-footer {
+  font-weight: bold;
+  animation: color 1s infinite;
+  font-size: 2.5rem;
+  display: flex;
+}
+.text-footer p {
+  margin: 0 0.625rem;
+}
+
+@keyframes color {
+  0% {
+    font-size: 0.75rem;
+    color: var(--verd);
+  }
+  50% {
+    color: var(--color--blanco);
+  }
+  100% {
+    color: var(--celeste);
+  }
+}
 @media screen and (max-width: 700px) {
   html {
     color: var(--celeste);
-    font-size: 15px;
+    font-size: 14px;
   }
   body {
     color: red;
-    font-size: 15px;
   }
+  .section {
+    min-height: 50vh;
+    max-height: 100vh;
+  }
+
+  .text-footer {
+    margin-top: -40px;
+    font-size: 1.5rem;
+  }
+  .cont-footer {
+    border-radius: 11px;
+    min-height: 20vh;
+    max-height: 30vh;
+    width: 100%;
+    background-color: var(--azulosc);
+    color: var(--verd);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .cont-header {
     padding: 0;
     align-items: center;
@@ -385,10 +448,12 @@ a {
     height: min-content;
   }
   .Presentacion {
-    height: 35vh;
+    height: 30vh;
+    max-height: 60vh;
   }
   .btn-conf {
-    padding: 0.7rem 0.9rem;
+    font-size: 1.4rem;
+    padding: 1rem 1.2rem;
   }
   .cont--text p {
     font-size: 1.2rem;
@@ -494,7 +559,7 @@ a {
   .boton-card a {
     font-weight: regular;
     margin: 0.5rem;
-    font-size: 0.2rem;
+    font-size: 0.1rem;
     border-radius: 0.6875rem;
     padding: 0.4rem 0.2rem;
   }
@@ -509,7 +574,7 @@ a {
     font-size: 1rem;
   }
   .Herramientas {
-    min-height: 68vh;
+    min-height: 60vh;
   }
   .textos-banner {
     height: 42vh;
@@ -520,10 +585,15 @@ a {
   .cont-proyectos {
     height: 10vh;
   }
+  .cont-redes nav li a i {
+    font-size: 2.8rem;
+  }
+  .boton-card a button {
+    font-size: 0.9rem;
+  }
 }
 @media screen and (max-width: 480px) {
   .Presentacion {
-    height: 42vh;
     margin: 5px 0;
   }
   .text-btn h2 {
@@ -534,5 +604,16 @@ a {
   }
   .cont-cards {
     margin: 0 1rem;
+  }
+}
+@media screen and (max-width: 430px) {
+  html {
+    font-size: 14px;
+  }
+  .Presentacion {
+    min-height: 50vh;
+  }
+  .Herramientas {
+    height: 70vh;
   }
 }
