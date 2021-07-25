@@ -4,13 +4,13 @@ function Head() {
   return (
     <nav className="nav-head">
       <li>
-        <a href=""> Inicio </a>
+        <a href="#Inicio"> Inicio </a>
       </li>
       <li>
-        <a href="">Contacto </a>
+        <a href="#Herramientas">Plataformas </a>
       </li>
       <li>
-        <a href="">Proyectos</a>
+        <a href="#Proyectos">Proyectos</a>
       </li>
     </nav>
   );

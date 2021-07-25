@@ -1,6 +1,7 @@
 import React from "react";
 import Logos from "../Componentes/Logos";
 import Banner from "../Secciones/Banner";
+import "boxicons";
 
 import Herramientas from "../Secciones/Herramientas";
 import Presentacion from "../Secciones/Presentacion";
@@ -12,16 +13,21 @@ function Inicio() {
       <section className="Redes-logos fondo">
         <Logos />
       </section>
-      <section className="Presentacion fondo ">
+      <div className="regresar">
+        <a href="#Inicio">
+          <i class="bx bx-chevrons-up"></i>
+        </a>
+      </div>
+      <section id="Inicio" className="Presentacion fondo ">
         <Presentacion />
       </section>
-      <section className="banner fondo ">
+      <section id="Herramientas" className="banner fondo ">
         <Banner />
       </section>
-      <section className="Proyectos fondo section">
+      <section id="Proyectos" className="Proyectos fondo section">
         <Proyectos />
       </section>
-      <section className="Herramientas fondo section">
+      <section id="Vermas" className="Herramientas fondo section">
         <Herramientas />
       </section>
       <section className="Footer">
